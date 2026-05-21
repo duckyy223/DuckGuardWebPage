@@ -1,0 +1,26 @@
+DuckGuard Terms of Service
+
+Last Updated: May 21, 2026
+
+By adding DuckGuard to your Discord server or using any of its features, you agree to be bound by the following Terms of Service. If you do not agree with any part of these terms, you must not use the bot.
+
+1. Acceptance of Terms
+By using DuckGuard, you represent that you are at least 13 years old (or the minimum age of digital consent in your country) and that you comply with Discord's Terms of Service.
+
+2. Use of the Service
+- Acceptable Use: You agree not to use the bot for illegal, malicious purposes or anything that violates Discord's policies.
+- Abuse and Exploitation: Attempting to exploit bugs, performing denial-of-service attacks, or trying to access data that does not belong to you is strictly prohibited.
+- User Responsibility: You are responsible for the actions performed by the bot on your server based on your configuration (e.g., automatic moderation systems).
+
+3. Availability and Modifications
+- DuckGuard is provided "as is" and "as available." We do not guarantee that the service will be uninterrupted or error-free.
+- We reserve the right to modify, suspend, or discontinue any feature of the bot at any time without prior notice.
+
+4. Limitation of Liability
+To the maximum extent permitted by law, DuckGuard and its developers shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use the bot, including but not limited to loss of data or Discord penalties.
+
+5. Termination
+We reserve the right to restrict access to the bot for certain users or servers that violate these terms or negatively affect the stability of the service.
+
+6. Contact
+For any questions regarding these terms, you can join our official server: https://shrinkme.click/DuckGuardDiscord

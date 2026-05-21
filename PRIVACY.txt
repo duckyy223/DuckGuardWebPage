@@ -1,0 +1,38 @@
+DuckGuard Privacy Policy
+
+Last Updated: May 21, 2026
+
+At DuckGuard, we take your privacy seriously. This policy explains what data we collect, how we use it, and how we protect it.
+
+1. Data We Collect
+DuckGuard only collects the minimum data necessary for its operation:
+- Discord Identifiers: We collect user IDs, server IDs, and channel IDs to link settings and data.
+- Configuration Data: We store the settings you make in the bot (e.g., welcome channels, autorole settings).
+- System Data:
+    - Economy and XP: Virtual balance, levels, and experience.
+    - Moderation: Warning history and action logs.
+    - Birthdays: Date of birth (only if the user chooses to register it).
+- Message Content: This is only processed in real-time for features like word filtering or antispam. We do not store message content permanently, except in audit logs explicitly configured by the server administrator.
+
+2. Use of Information
+We use the collected information exclusively to:
+- Provide the bot features requested by the server.
+- Maintain the security and stability of the service.
+- Generate anonymous internal statistics to improve the bot.
+
+3. Data Sharing
+We do not sell or share your data with third parties. Data is only accessible for the bot's operation through the official Discord API and for developers in case of technical support.
+
+4. Storage and Security
+- Data is stored in a secure database and is only kept as long as necessary for the service.
+- We implement technical measures to protect your data against unauthorized access.
+
+5. Your Rights and Data Control
+- Data Deletion: You may request the deletion of your personal data. If the bot is removed from a server, that server's configuration may be deleted after a period of inactivity.
+- Access: You can check your information (such as level or balance) through the corresponding bot commands.
+
+6. Changes to this Policy
+We may update this policy occasionally. We recommend reviewing it periodically. Continued use of the bot after an update constitutes acceptance of the new policy.
+
+7. Contact
+If you have questions about your data, please contact us on our official server: https://shrinkme.click/DuckGuardDiscord
