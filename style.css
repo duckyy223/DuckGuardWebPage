@@ -1,0 +1,222 @@
+/* -------------------------------------------------
+   Reset
+   ------------------------------------------------- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------
+   Page layout
+   ------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('back.jpg') center / cover no-repeat;
+    background-attachment: scroll; /* Background moves with the site */
+    color: #fff;
+    line-height: 1.6;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Dark overlay so text is always legible */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+/* -------------------------------------------------
+   Hero section – full-screen, centered
+   ------------------------------------------------- */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.hero h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 800;
+    max-width: 900px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeUp 0.8s ease both;
+}
+
+.subtitle {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    animation: fadeUp 0.8s 0.1s ease both;
+}
+
+/* -------------------------------------------------
+   Features Section
+   ------------------------------------------------- */
+.features {
+    padding: 100px 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.section-desc {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 24px;
+    text-align: left;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(88, 101, 242, 0.4);
+}
+
+.step-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 4rem;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    opacity: 0.05;
+    font-weight: 800;
+}
+
+.feature-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #5865F2;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+/* -------------------------------------------------
+   Buttons
+   ------------------------------------------------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeUp 0.8s 0.2s ease both;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #5865F2 0%, #4752c4 100%);
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(88, 101, 242, 0.4);
+}
+
+.btn-discord {
+    background: #23272A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.btn:hover {
+    box-shadow: 0 15px 40px rgba(88, 101, 242, 0.5);
+}
+
+.btn-discord:hover {
+    background: #2c2f33;
+    border-color: #5865F2;
+}
+
+/* -------------------------------------------------
+   Footer
+   ------------------------------------------------- */
+.footer {
+    padding: 100px 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer p {
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 2rem;
+}
+
+/* -------------------------------------------------
+   Animations
+   ------------------------------------------------- */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------------------------------------
+   Responsive tweaks
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        padding: 1rem;
+    }
+}
