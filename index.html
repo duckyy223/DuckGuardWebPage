@@ -9,9 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5269401615442570"
-         crossorigin="anonymous"></script>
+    <!-- Google Consent Mode v2 – must run BEFORE the AdSense script -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+
+      // Default: everything denied until the user interacts with the CMP
+      // (applies to EEA, UK & Switzerland visitors)
+      gtag('consent', 'default', {
+        'ad_storage':          'denied',
+        'ad_user_data':        'denied',
+        'ad_personalization':  'denied',
+        'analytics_storage':   'denied',
+        'wait_for_update':     500        // ms to wait for CMP to update consent
+      });
+    </script>
+
+    <!-- Google AdSense + CMP (Privacy & Messaging) -->
+    <script async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5269401615442570"
+      crossorigin="anonymous"></script>
 </head>
 <body>
     <canvas id="particles"></canvas>
@@ -71,6 +88,9 @@
         <a href="https://shrinkme.click/DuckGuardDiscord" class="btn btn-discord" target="_blank" rel="noopener noreferrer">
             Join Official Discord
         </a>
+        <p style="margin-top:24px;font-size:0.8rem;opacity:0.4;">
+            <a href="privacy.html" style="color:inherit;text-decoration:none;">Privacy Policy</a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
