@@ -16,8 +16,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: url('back.jpg') center / cover no-repeat;
-    background-attachment: scroll; /* Background moves with the site */
+    background-color: #0b0d12;
     color: #fff;
     line-height: 1.6;
 }
